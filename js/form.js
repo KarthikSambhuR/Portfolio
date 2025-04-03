@@ -10,7 +10,7 @@ document.querySelector(".contact-form").addEventListener("submit", function (eve
         return;
     }
 
-    fetch("https://forms.pixelplayz.workers.dev/", { // Your Cloudflare Worker URL
+    fetch("https://forms.pixelplayz.workers.dev/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: messageText, contactInfo: contactInfo }),
@@ -27,7 +27,6 @@ document.querySelector(".contact-form").addEventListener("submit", function (eve
     .catch(error => showMessage("❌ Network error. Please try again later.", "red"));
 });
 
-// Function to display messages
 function showMessage(text, color) {
     const messageBox = document.getElementById("message-box");
     messageBox.textContent = text;
@@ -35,7 +34,6 @@ function showMessage(text, color) {
     messageBox.style.color = "white";
     messageBox.style.display = "block";
 
-    // Hide the message after 5 seconds
     setTimeout(() => {
         messageBox.style.display = "none";
     }, 5000);
