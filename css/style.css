@@ -149,10 +149,9 @@ h1 {
     background-color: var(--primary-color);
 }
 
-/* Expertise Grid (2 Columns, 3 Rows) */
 .expertise-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -164,17 +163,16 @@ h1 {
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.05); /* Optional */
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .expertise-item img {
-    width: 60px; /* Adjust size as needed */
+    width: 60px;
     height: 60px;
     object-fit: contain;
     margin-bottom: 10px;
 }
 
-/* Education Grid - Image on Left */
 .education-item {
     display: flex;
     align-items: center;
@@ -184,7 +182,7 @@ h1 {
 }
 
 .edu-img {
-    width: 60px; /* Adjust size */
+    width: 60px;
     height: 60px;
     object-fit: contain;
     flex-shrink: 0;
@@ -197,7 +195,6 @@ h1 {
     flex: 1;
 }
 
-/* Project Grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -205,7 +202,6 @@ h1 {
     margin-top: 2rem;
 }
 
-/* Project Card - Image Left, Content Right */
 .project-card {
     display: flex;
     align-items: center;
@@ -217,15 +213,15 @@ h1 {
 }
 
 .project-img {
-    width: 150px; /* Adjust as needed */
+    width: 150px;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
-    flex-shrink: 0; /* Prevents shrinking */
+    flex-shrink: 0;
 }
 
 .project-content {
-    flex: 1; /* Allows text to take remaining space */
+    flex: 1;
 }
 
 .project-links {
@@ -234,7 +230,6 @@ h1 {
     margin-top: 10px;
 }
 
-/* Project Buttons with Icons */
 .project-links a {
     display: flex;
     align-items: center;
@@ -251,12 +246,12 @@ h1 {
 }
 
 .github {
-    background-color: #18232d; /* GitHub color */
+    background-color: #18232d;
     color: white;
 }
 
 .github:hover {
-    background-color: #202d38; /* GitHub color */
+    background-color: #202d38;
 }
 
 .view {
@@ -269,11 +264,10 @@ h1 {
 }
 
 .project-links img {
-    width: 20px; /* Adjust icon size */
+    width: 20px;
     height: 20px;
 }
 
-/* Contact Form */
 .contact-form {
     max-width: 600px;
     margin: 2rem auto;
@@ -310,12 +304,12 @@ h1 {
 
 .social-links {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-bottom: 2rem;
     justify-content: center;
-    max-width: 400px; /* Keeps it centered and structured */
-    margin: 0 auto; /* Centers the grid */
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .social-links a {
@@ -329,7 +323,7 @@ h1 {
 }
 
 .social-links a img {
-    width: 32px; /* Larger size */
+    width: 32px;
     height: 32px;
 }
 
@@ -337,15 +331,13 @@ h1 {
     color: var(--primary-color);
 }
 
-/* Certifications Grid - 2 Columns */
 .certifications-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
 
-/* Certification Card - Image Left, Content Right */
 .certification-card {
     display: flex;
     align-items: center;
@@ -370,7 +362,7 @@ h1 {
 .certificate {
     border-radius: 10px;
 }
-/* Credentials Link with SVG */
+
 .certification-card .credentials {
     display: flex;
     align-items: center;
@@ -391,16 +383,15 @@ h1 {
     height: 20px;
 }
 
-/* Add this rule BEFORE the @media query */
 .menu-toggle {
-    display: none; /* Hide hamburger button by default (desktop) */
+    display: none;
     cursor: pointer;
     background: none;
     border: none;
-    padding: 0; /* Remove default button padding */
-    position: absolute; /* Position relative to nav */
-    top: 1.2rem; /* Adjust vertical position */
-    right: 5%;  /* Position on the right */
+    padding: 0;
+    position: absolute;
+    top: 1.2rem;
+    right: 5%;
 }
 
 .menu-toggle .bar {
@@ -412,16 +403,13 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 
-
-/* --- START OF MOBILE STYLES --- */
 @media (max-width: 768px) {
-    /* --- General Adjustments --- */
     body {
-        font-size: 14px; /* Slightly smaller base font for mobile */
+        font-size: 14px;
     }
 
     h1 {
-        font-size: 2.5rem; /* Smaller heading */
+        font-size: 2.5rem;
     }
 
     h2 {
@@ -433,37 +421,36 @@ h1 {
     }
 
     section {
-        padding: 4rem 5%; /* Reduce padding */
+        padding: 4rem 5%;
     }
 
-    /* --- Navigation --- */
     nav {
-        width: 100%; /* Full width */
-        top: 0;      /* Stick to top */
+        width: 100%;
+        top: 0;
         left: 0;
         transform: none;
-        border-radius: 0; /* Remove rounding */
-        padding: 1rem 5%; /* Adjust padding */
-        flex-direction: column; /* Stack logo/links vertically initially */
-        align-items: flex-start; /* Align items to the left */
+        border-radius: 0;
+        padding: 1rem 5%;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .nav-links {
-        display: none; /* Hide desktop links */
-        flex-direction: column; /* Stack links vertically */
+        display: none;
+        flex-direction: column;
         width: 100%;
-        background-color: #242424; /* Match nav background */
+        background-color: #242424;
         padding: 1rem 0;
-        position: absolute; /* Position relative to nav */
-        top: 100%; /* Position below the nav bar */
+        position: absolute;
+        top: 100%;
         left: 0;
-        z-index: 999; /* Ensure it's above content */
-        border-bottom-left-radius: 10px; /* Optional rounding */
+        z-index: 999;
+        border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
 
     .nav-links.show {
-        display: flex; /* Show when active */
+        display: flex;
     }
 
     .nav-links li {
@@ -474,32 +461,30 @@ h1 {
 
     .nav-links a {
         padding: 0.8rem 0;
-        display: block; /* Make links take full width */
+        display: block;
     }
 
     .contact-btn, .contact-btn2 {
-        padding: 0.8rem 1.5rem; /* Adjust padding */
-        margin: 0.5rem auto 0; /* Center button */
-        display: inline-block; /* Allow centering */
-        border: none; /* Remove border for btn2 initially */
+        padding: 0.8rem 1.5rem;
+        margin: 0.5rem auto 0;
+        display: inline-block;
+        border: none;
     }
     .contact-btn2 {
         border: none;
-        color: var(--text-color); /* Match other links */
-        background-color: var(--primary-color); /* Match btn1 */
+        color: var(--text-color);
+        background-color: var(--primary-color);
     }
-    .nav-links .active { /* Make active state more prominent */
+    .nav-links .active {
       background-color: rgba(105, 203, 174, 0.2);
       border-radius: 5px;
     }
 
-
-    /* Hamburger Menu Toggle */
     .menu-toggle {
-        display: block; /* Show toggle button */
-        position: absolute; /* Position relative to nav */
-        top: 1.2rem; /* Adjust vertical position */
-        right: 5%;  /* Position on the right */
+        display: block;
+        position: absolute;
+        top: 1.2rem;
+        right: 5%;
         cursor: pointer;
         background: none;
         border: none;
@@ -514,7 +499,6 @@ h1 {
         transition: all 0.3s ease-in-out;
     }
 
-    /* Optional: Animate hamburger to X */
     .menu-toggle.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
@@ -525,90 +509,82 @@ h1 {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /* --- Hero Section --- */
     .hero {
-        padding-top: 15vh; /* Adjust top padding */
-        text-align: center; /* Center align text */
+        padding-top: 15vh;
+        text-align: center;
     }
 
     .description {
         font-size: 1.1rem;
-        max-width: 90vw; /* Allow more width */
-        margin: 1rem auto; /* Center description */
+        max-width: 90vw;
+        margin: 1rem auto;
     }
 
     .cta-buttons {
-        flex-direction: column; /* Stack buttons */
-        align-items: center; /* Center buttons */
+        flex-direction: column;
+        align-items: center;
         gap: 0.8rem;
     }
 
     .btn {
-        width: 80%; /* Make buttons wider */
+        width: 80%;
         text-align: center;
     }
 
-    /* --- Grids (Stack to Single Column) --- */
     .expertise-grid,
     .projects-grid,
     .certifications-grid,
     .social-links {
-        grid-template-columns: 1fr; /* Single column */
-        gap: 1.5rem; /* Adjust gap */
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
-    /* --- Card Layouts (Stack Image/Content) --- */
     .education-item,
     .project-card,
     .certification-card {
-        flex-direction: column; /* Stack content */
-        align-items: center;   /* Center items */
-        text-align: center;    /* Center text */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         gap: 1rem;
         padding: 1.5rem 1rem;
     }
 
     .edu-img,
     .project-img,
-    .certification-card .certificate { /* Ensure certificate image is targeted */
-        width: 80%; /* Adjust image width */
-        max-width: 200px; /* Max width for images */
-        height: auto; /* Maintain aspect ratio */
-        flex-shrink: 1; /* Allow shrinking if needed */
-        margin-bottom: 1rem; /* Add space below image */
+    .certification-card .certificate {
+        width: 80%;
+        max-width: 200px;
+        height: auto;
+        flex-shrink: 1;
+        margin-bottom: 1rem;
     }
 
     .project-content, .edu-content, .certification-content {
-        width: 100%; /* Ensure content takes full width */
+        width: 100%;
     }
 
     .project-links {
-        justify-content: center; /* Center project links */
-        flex-wrap: wrap; /* Allow links to wrap if needed */
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-     /* --- Contact Form --- */
     .contact-form {
-        max-width: 90%; /* Allow form to be wider */
+        max-width: 90%;
     }
 
     .social-links {
-        max-width: 90%; /* Adjust width */
-        justify-items: center; /* Center grid items */
-        grid-template-columns: 1fr; /* Ensure single column */
+        max-width: 90%;
+        justify-items: center;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
     .social-links a {
-        font-size: 1.1rem; /* Adjust font size */
-        justify-content: center; /* Center icon and text */
+        font-size: 1.1rem;
+        justify-content: center;
     }
 
-    /* --- Hide Custom Cursor --- */
-    /* Already handled by existing media query, but ensure it's there */
     .cursor-circle {
         display: none;
     }
 }
-
-/* --- END OF MOBILE STYLES --- */
