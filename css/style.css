@@ -552,7 +552,7 @@ h1 {
     .edu-img,
     .project-img,
     .certification-card .certificate {
-        width: 80%;
+        width: 25%;
         max-width: 200px;
         height: auto;
         flex-shrink: 1;
