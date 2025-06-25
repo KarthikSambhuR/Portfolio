@@ -9,17 +9,22 @@
     <link rel="icon" type="image/svg+xml" href="images/about.svg">
 </head>
 <body>
+    <div class="page-transition-loader">
+        <div class="vertical-line"></div>
+        <div class="loader-bg bg-left"></div>
+        <div class="loader-bg bg-right"></div>
+    </div>
     <div class="cursor-circle"></div>
     <nav>
         <div class="logo">
             <img class="HomeBtn" src="images/about.svg" alt="Home">
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a class="transition-link" href="index.html">Home</a></li>
             <li><a class="active">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact Me</a></li>
+            <li><a class="transition-link" href="projects.html">Projects</a></li>
+            <li><a class="transition-link" href="certifications.html">Certifications</a></li>
+            <li><a class="transition-link" href="contact.html" class="contact-btn">Contact Me</a></li>
         </ul>
         <button class="menu-toggle" aria-label="Toggle Navigation">
             <span class="bar"></span>
@@ -163,6 +168,7 @@
             </div>
         </div>
     </section>
+    <script src="js/loading.js"></script>
     <script src="js/cursor.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/date.js"></script>

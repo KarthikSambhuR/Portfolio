@@ -8,16 +8,21 @@
     <link rel="icon" type="image/svg+xml" href="images/contact.svg">
 </head>
 <body>
+    <div class="page-transition-loader">
+        <div class="vertical-line"></div>
+        <div class="loader-bg bg-left"></div>
+        <div class="loader-bg bg-right"></div>
+    </div>
     <div class="cursor-circle"></div>
     <nav>
         <div class="logo">
             <img class="HomeBtn" src="images/contact.svg" alt="Home">
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
+            <li><a class="transition-link" href="index.html">Home</a></li>
+            <li><a class="transition-link" href="about.html">About</a></li>
+            <li><a class="transition-link" href="projects.html">Projects</a></li>
+            <li><a class="transition-link" href="certifications.html">Certifications</a></li>
             <li><a class="contact-btn2" style="color: #69CBAE;">Contact Me</a></li>
         </ul>
         <button class="menu-toggle" aria-label="Toggle Navigation">
@@ -31,16 +36,16 @@
         <br>
         <br>
         <div class="social-links">
-            <a href="https://instagram.com/KarthikSambhuR" target="_blank">
+            <a href="https://instagram.com/KarthikSambhuR" class="transition-link" target="_blank" >
                 <img src="images/instagram.svg" alt="Instagram"> @KarthikSambhuR
             </a>
-            <a href="https://github.com/KarthikSambhuR" target="_blank">
+            <a href="https://github.com/KarthikSambhuR" class="transition-link" target="_blank">
                 <img src="images/github.svg" alt="GitHub"> @KarthikSambhuR
             </a>
-            <a href="https://linkedin.com/in/KarthikSambhuR" target="_blank">
+            <a href="https://linkedin.com/in/KarthikSambhuR" class="transition-link" target="_blank">
                 <img src="images/linkedin.svg" alt="LinkedIn"> @KarthikSambhuR
             </a>
-            <a href="mailto:karthiksambhu123@gmail.com">
+            <a href="mailto:karthiksambhu123@gmail.com" class="transition-link">
                 <img src="images/email.svg" alt="Email"> karthiksambhu123@gmail.com
             </a>
         </div>
@@ -59,6 +64,7 @@
             "></div>
         </form>
     </section>
+    <script src="js/loading.js"></script>
     <script src="js/cursor.js"></script>
     <script src="js/form.js"></script>
     <script src="js/nav.js"></script>

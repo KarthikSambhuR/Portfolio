@@ -8,17 +8,22 @@
     <link rel="icon" type="image/svg+xml" href="images/certifications.svg">
 </head>
 <body>
+    <div class="page-transition-loader">
+        <div class="vertical-line"></div>
+        <div class="loader-bg bg-left"></div>
+        <div class="loader-bg bg-right"></div>
+    </div>
     <div class="cursor-circle"></div>
     <nav>
         <div class="logo">
             <img class="HomeBtn" src="images/certifications.svg" alt="Home">
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a class="transition-link" href="index.html">Home</a></li>
+            <li><a class="transition-link" href="about.html">About</a></li>
+            <li><a class="transition-link" href="projects.html">Projects</a></li>
             <li><a class="active">Certifications</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact Me</a></li>
+            <li><a class="transition-link" href="contact.html" class="contact-btn">Contact Me</a></li>
         </ul>
         <button class="menu-toggle" aria-label="Toggle Navigation">
             <span class="bar"></span>
@@ -50,7 +55,7 @@
                 <div class="certification-content">
                     <h3>Infosys: Prompt Engineering For Developers</h3>
                     <p class="date">2025</p>
-                    <a href="https://verify.onwingspan.com/" class="credentials">
+                    <a href="https://verify.onwingspan.com/" class="credentials transition-link">
                         <img src="images/link.svg" alt="Link Icon"> View Credentials
                     </a>
                 </div>
@@ -60,7 +65,7 @@
                 <div class="certification-content">
                     <h3>IBM: Web Development Fundamentals</h3>
                     <p class="date">2025</p>
-                    <a href="https://www.credly.com/badges/7b9f549c-b2e8-405c-91f2-24671c72954a" class="credentials">
+                    <a href="https://www.credly.com/badges/7b9f549c-b2e8-405c-91f2-24671c72954a" class="credentials transition-link">
                         <img src="images/link.svg" alt="Link Icon"> View Credentials
                     </a>
                 </div>
@@ -70,7 +75,7 @@
                 <div class="certification-content">
                     <h3>Cloud Computing Fundamentals</h3>
                     <p class="date">2025</p>
-                    <a href="https://www.cloudskillsboost.google/public_profiles/0f714f35-6b64-4b1b-b72b-05eca7a75da3/badges/14553801" class="credentials">
+                    <a href="https://www.cloudskillsboost.google/public_profiles/0f714f35-6b64-4b1b-b72b-05eca7a75da3/badges/14553801" class="credentials transition-link">
                         <img src="images/link.svg" alt="Link Icon"> View Credentials
                     </a>
                 </div>
@@ -80,7 +85,7 @@
                 <div class="certification-content">
                     <h3>AJCE Mastermind 25 - Patent Funding</h3>
                     <p class="date">2025</p>
-                    <a href="https://events.amaljyothi.ac.in/verify/5qbzi3" class="credentials">
+                    <a href="https://events.amaljyothi.ac.in/verify/5qbzi3" class="credentials transition-link">
                         <img src="images/link.svg" alt="Link Icon"> View Credentials
                     </a>
                 </div>
@@ -90,7 +95,7 @@
                 <div class="certification-content">
                     <h3>Drone Navigation Workshop</h3>
                     <p class="date">2025</p>
-                    <a href="https://events.amaljyothi.ac.in/verify/9gbbwy" class="credentials">
+                    <a href="https://events.amaljyothi.ac.in/verify/9gbbwy" class="credentials transition-link">
                         <img src="images/link.svg" alt="Link Icon"> View Credentials
                     </a>
                 </div>
@@ -100,7 +105,7 @@
                 <div class="certification-content">
                     <h3>Prompt Engineering Workshop</h3>
                     <p class="date">2025</p>
-                    <a href="https://events.amaljyothi.ac.in/verify/pvka7x" class="credentials">
+                    <a href="https://events.amaljyothi.ac.in/verify/pvka7x" class="credentials transition-link">
                         <img src="images/link.svg" alt="Link Icon"> View Credentials
                     </a>
                 </div>
@@ -110,7 +115,7 @@
                 <div class="certification-content">
                     <h3>Building Scalable Java Microservices with Spring Boot and Spring Cloud</h3>
                     <p class="date">2024</p>
-                    <a href="https://www.coursera.org/account/accomplishments/records/GRTXCHOYS9IL" class="credentials">
+                    <a href="https://www.coursera.org/account/accomplishments/records/GRTXCHOYS9IL" class="credentials transition-link">
                         <img src="images/link.svg" alt="Link Icon"> View Credentials
                     </a>
                 </div>
@@ -198,6 +203,7 @@
             </div>
         </div>
     </section>
+    <script src="js/loading.js"></script>
     <script src="js/cursor.js"></script>
     <script src="js/nav.js"></script>
 </body>
